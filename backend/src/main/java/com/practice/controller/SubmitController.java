@@ -1,7 +1,6 @@
 package com.practice.controller;
 
 import com.practice.dto.*;
-import com.practice.dto.QuestionDTO.*;
 import com.practice.entity.Submission;
 import com.practice.entity.WrongNote;
 import com.practice.service.SubmitService;

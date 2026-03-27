@@ -1,7 +1,6 @@
 package com.practice.controller;
 
 import com.practice.dto.*;
-import com.practice.dto.QuestionDTO.*;
 import com.practice.entity.Question;
 import com.practice.service.QuestionService;
 import io.swagger.v3.oas.annotations.Operation;
