@@ -40,9 +40,12 @@ public class QuestionService {
                 query.getStatus());
         
         PageResponse<Question> response = new PageResponse<>();
-        response.setTotal(Long.valueOf(result.getTotal()));
-        response.setPage(Integer.valueOf(result.getCurrent().intValue()));
-        response.setSize(Integer.valueOf(result.getSize().intValue()));
+        long totalVal = result.getTotal();
+        long currentVal = result.getCurrent();
+        long sizeVal = result.getSize();
+        response.setTotal(Long.valueOf(totalVal));
+        response.setPage(Integer.valueOf((int)currentVal));
+        response.setSize(Integer.valueOf((int)sizeVal));
         response.setRecords(result.getRecords());
         
         return response;
