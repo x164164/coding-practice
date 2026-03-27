@@ -41,8 +41,8 @@ public class QuestionService {
         
         PageResponse<Question> response = new PageResponse<>();
         response.setTotal(result.getTotal());
-        response.setPage(result.getCurrent());
-        response.setSize(result.getSize());
+        response.setPage(result.getCurrent().intValue());
+        response.setSize(result.getSize().intValue());
         response.setRecords(result.getRecords());
         
         return response;
