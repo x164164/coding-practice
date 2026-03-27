@@ -20,11 +20,9 @@ public class User {
     private String role;           // 角色: student/admin
     private Integer status;         // 状态: 0禁用 1正常
     
-    @TableField(exist = false)
-    private Integer totalQuestions;   // 总做题数 (不映射数据库)
+    private Integer totalQuestions;   // 总做题数
     
-    @TableField(exist = false)
-    private Integer correctCount;      // 正确数 (不映射数据库)
+    private Integer correctCount;      // 正确数
     
     @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createdAt;

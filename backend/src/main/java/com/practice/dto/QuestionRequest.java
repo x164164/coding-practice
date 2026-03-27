@@ -28,29 +28,3 @@ public class QuestionRequest {
         private String content; // 选项内容
     }
 }
-
-@Data
-public class QuestionQuery {
-    private Integer page = 1;
-    private Integer size = 20;
-    private String category;
-    private Integer difficulty;
-    private String type;
-    private String keyword;
-    private String status;
-}
-
-@Data
-public class SubmitAnswerRequest {
-    private Long questionId;
-    private String userAnswer;
-    private Integer timeSpent;
-}
-
-@Data
-public class SubmitAnswerResponse {
-    private Boolean isCorrect;
-    private String correctAnswer;
-    private String analysis;
-    private Integer score;
-}

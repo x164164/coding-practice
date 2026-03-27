@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.practice.dto.ProgressResponse;
 import com.practice.dto.RankingItem;
 import com.practice.entity.User;
+import com.practice.entity.WrongNote;
 import com.practice.mapper.UserMapper;
 import com.practice.mapper.SubmissionMapper;
 import com.practice.mapper.QuestionMapper;

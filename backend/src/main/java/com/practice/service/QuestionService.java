@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.practice.dto.PageResponse;
-import com.practice.dto.QuestionDTO.*;
+import com.practice.dto.QuestionQuery;
 import com.practice.dto.QuestionRequest;
 import com.practice.entity.Question;
 import com.practice.mapper.QuestionMapper;
